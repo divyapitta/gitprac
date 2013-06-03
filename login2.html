@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"> <head><script type="text/javascript">var
+NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new
+Date().getTime()]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title> <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/jquery-ui.min.js"></script>
+    <title>MOOC</title> <meta property="og:title" content="mooc" />
+
+<link rel='stylesheet' href='./css/home.css' type='text/css' media='all'>
+
+    <meta name="description" content="Knowledge, Wisdom & Community thats amazing"> <meta
+    property="og:description" content="Use MOOC to bring back to you what you left behind someday" />
+
+
+
+
+
+
+<meta property="og:type" content="website" /> <meta property="fb:admins"
+content="603317924" />
+
+
+<meta name="google-site-verification"
+content="aTHx0fECngasT9jjBPd1v4U0rASSCH36eobTv3xqzA8" /> <meta name="author" content="Divya" > <link rel="author" href="/humans.txt" />
+
+
+
+<script type="text/javascript" src="//use.typekit.net/rop5xco.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="icon" type="image/png" href="./img/moocl.jpg"> <link
+rel="apple-touch-icon-precomposed" href="./img/moocl.jpg" sizes="114x114" />
+<link rel="fluid-icon" href="./img/moocl.jpg" title="Kippt" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+href="https://d17f28g3dsa4vh.cloudfront.net/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+href="https://d17f28g3dsa4vh.cloudfront.net/img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+  href="https://d17f28g3dsa4vh.cloudfront.net/img/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed"
+		href="https://d17f28g3dsa4vh.cloudfront.net/img/apple-touch-icon-57-precomposed.png">
+
+<link rel="chrome-webstore-item"
+href="https://chrome.google.com/webstore/detail/pjldngiecbcfldpghnimmdelafenmbni">
+
+
+    <link rel="stylesheet" href="./css/97014f308af8.css" type="text/css" />
+
+    <script type="text/javascript" src="./js/c16ed7fcad12.js"></script>
+    
+    <script>
+function validate(form)
+{
+var x=form.email.value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+</script>
+
+<!--	<style type="text/css">
+   #extra {
+      border-left: 1px solid black;
+      margin-left:50%;
+   }
+</style> -->
+<script>
+$(document).ready(function(){
+$("#id_email").focus();
+});
+</script>
+</head>
+
+<body class="page landing">
+    <div class="navbar"> <div class="container">
+	<button type="button" class="navbar-toggle" data-toggle="collapse"
+	data-target=".nav-collapse">
+	    <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+	    class="icon-bar"></span>
+	</button> <a class="navbar-brand" href="/"><img src="./img/moocl.jpg"
+	width="100"></a> <div class="nav-collapse collapse">
+	    <ul class="nav">
+		<!--<li><a href="/features/">Features</a></li>--> <li><a
+		href="/about/">About</a></li> <li><a
+		href="http://blog.kippt.com/">Courses</a></li> <li
+		class="sep"><li> <li><a href=#>Log in</a></li> <li
+		class="signup"><a href="/home/divya/Documents/mooctemplate/signup2.html#/">Sign up</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+
+	
+	<div id="main">
+        
+<div class="container">
+    <div id="login" class="accounts-form row">
+    
+        <div class="span10 offset2">
+            <h3><span style="color:#cc3300; ">Sign In</span></h3><hr style="border=0; height:1px; background:#333; background-image:-moz-linear-gradient(left, #ccc, #333, #ccc); background-image:-webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image:-ms-linear-gradient(left, #ccc, #333, #ccc); background-image:-o-linear-gradient(left, #ccc, #333, #ccc); padding:0; margin:0"></hr>
+        </div> 
+
+        <div class="span4 offset2" id="loginbox">
+        <br>
+            <form action="/login" method="POST" id="auth-form" autocomplete="off" onsubmit="return validate(this);" name="loginform"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='0JPDJGHQ0TJjXgeBV2CipbXFvOAC87lV' /></div>
+                
+                <div class="all-errors">
+                    
+                </div>
+                <div class="well"> 
+                <fieldset>
+                <div class="input">
+                    <input id="id_email" type="email" name="email" placeholder="Email Address" style="width=10px; background-color:white; border:1px solid lightgrey;" required /><br></br>
+                
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="id_password" placeholder="Password" style="width=10px; background-color:white; border:1px solid lightgrey;" required /><br></br>
+                    
+                </div>
+                <div class="input"><input type="checkbox">&#160 Remember me</input><input type="submit" value="Log In" class="btn btn-primary btn-large" style="margin-left:101px; position:relative; left:10px; width=40px;"/> 
+                
+</div>
+                <br> 
+                    
+                    		 <p><small><a href="/home/divya/Documents/mooctemplate/forgotpw.html#/" style="text-decoration:underline;">Forgot your password?</a><br>
+                                          </small></p>
+                                          
+                </fieldset>
+               </div> 
+            </form>
+        </div>
+        <div class="span6" id="extra" style="text-align:center;">
+        		<br><br></br><br></br>
+			<p>New to MOOC? Don't worry. <a href="/home/divya/Documents/mooctemplate/signup2.html#/"><span class="btn btn-link">Sign up today!</span></a>
+			</p>        
+        </div>
+    </div>
+    
+</div>
+
+        <div id="push"></div>
+    </div>
+
+	<footer
+    <div class="container">
+	<div class="row">
+	    <div class="span3">
+		<h5>Help</h5> <a href="#" target="_blank">Help</a><br> <a
+		href="/about/">About</a><br> <a href="/faq/">FAQ</a><br> <a
+		href="#" target="_blank">Feedback</a>
+	    </div> <div class="span3">
+	      <h5>About</h5> <a href="/about/">About MOOC</a> <br> <a
+	      href="/press/"></a> <br> <a href="/privacy/">Privacy</a> <br> <a
+	      href="/terms/">Terms</a>
+	    </div> <div class="span3">
+	      <h5>Community</h5> <a href="http://blog.kippt.com/">Blog</a> <br>
+	      <a href="https://twitter.com/kippt/">Twitter</a> <br> <a
+	      href="https://facebook.com/kipptapp/">Facebook</a><br> <a
+	      href="/about/">Contact Us</a>
+	    </div> <div class="span3 lovingly">
+		<p>Handcrafted in San Francisco with Finnish Heritage
+		<span>&hearts;</span></p>
+	    </div>
+	</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-17714404-3']);
+    _gaq.push(['_trackPageview']); _gaq.push(['_trackPageLoadTime']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'Logged in', 'false', 2]);
+    _gaq.push(['_setCustomVar', 2, 'Member', 'false', 1]);
+    _gaq.push(['_setCustomVar', 4, 'Join month', '0', 1]);
+    _gaq.push(['_setCustomVar', 5, 'Join year', '0', 1]);
+
+
+    (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript';
+	ga.async = true; ga.src = ('https:' == document.location.protocol ?
+	'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s =
+	document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+    })();
+
+    <script>
+
+</script> </script>
+
+<script
+type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new
+Date().getTime()]);var
+e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-3.newrelic.com","36001797b1","1285686","MlQEMREADxUFB0UKCQseIBANAhUPCwoeAAoMQRVLFQgEERdeWA0CAEk=",0,18,new
+Date().getTime(),"","","","",""]);</script></body> </html>
+
